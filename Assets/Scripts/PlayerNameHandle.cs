@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerNameHandle : MonoBehaviour
 {
-    public static PlayerNameHandle Instance;
+    public static PlayerNameHandle Instance { get; private set; }
     public string PlayerName;
 
     private void Awake()
