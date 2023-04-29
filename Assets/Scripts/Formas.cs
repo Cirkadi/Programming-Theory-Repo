@@ -8,8 +8,7 @@ public abstract class Formas : MonoBehaviour
     private Rigidbody formasRB;
     private int secondsToJump = 1;
     public Text greeting;
-
-    // Start is called before the first frame update
+        
     void Start()
     {
         formasRB = GetComponent<Rigidbody>();
@@ -21,6 +20,7 @@ public abstract class Formas : MonoBehaviour
         while (true)
         {
         yield return new WaitForSeconds(secondsToJump);
+        // ABSTRACTION
         Move();
         }        
     }
@@ -32,6 +32,7 @@ public abstract class Formas : MonoBehaviour
 
     private void OnMouseDown()
     {
+        //ABSTRACTION
         GreetingPlayer();
         WhatIsThis();
     }
@@ -41,5 +42,6 @@ public abstract class Formas : MonoBehaviour
         greeting.text = "Hi, " + PlayerNameHandle.Instance.PlayerName + ".";
     }
 
+    //POLYMORPHISM
     protected abstract void WhatIsThis();
 }

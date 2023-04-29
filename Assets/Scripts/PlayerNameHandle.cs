@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerNameHandle : MonoBehaviour
 {
+    //ENCAPSULATION
     public static PlayerNameHandle Instance { get; private set; }
     public string PlayerName;
 

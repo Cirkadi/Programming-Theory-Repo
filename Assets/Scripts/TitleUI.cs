@@ -10,7 +10,6 @@ public class TitleUI : MonoBehaviour
     [SerializeField] GameObject noNameAlert;
     [SerializeField] GameObject tooLongNameAlert;
 
-
     public void SetPlayerName()
     {
         noNameAlert.SetActive(false);
